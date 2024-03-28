@@ -26,13 +26,13 @@ class Movie {
     }
 };
 const films = [
-    new Movie("Casino Royale", "EON Productions", "PG13"),
-    new Movie("Vikram", "RKFI", "Not Rated"),
-    new Movie("Intersteller", "Paramount Pictures", "PG-13"),
-    new Movie("Deadpool", "Marvel Studios", "PG"),
-    new Movie("Joker", "Warner.Bros", "PG"),
+    new Movie("Casino Royale", "EON Productions", "PG"),
+    new Movie("Vikram", "RKFI", "R"),
+    new Movie("Intersteller", "Paramount Pictures", "PG"),
+    new Movie("Deadpool", "Marvel Studios", "R"),
+    new Movie("Joker", "Warner.Bros", "R"),
     new Movie("Black Adam", "DC Films", "PG-13"),
-    new Movie("John Wick", "87Eleven Productions", "PG")
+    new Movie("John Wick", "87Eleven Productions", "R")
 ];
 const RMovies = Movie.getPG(films).sort();
 console.log(RMovies);
