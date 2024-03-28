@@ -110,13 +110,13 @@ class uber {
         this.price = price;
         this.km = km;
     }
-    set cost(ele){
-        this.price = ele;
-        this.km = ele;
+    set cost(a){
+        this.price = a;
+        //this.km = a;
     }
-    // set kilometer(b){
-    //     this.km = b;
-    // }
+    set kilometer(b){
+         this.km = b;
+     }
     get cost(){
         return this.price*this.km;
     }
