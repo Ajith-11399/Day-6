@@ -82,7 +82,7 @@ console.log(circle1.Circumference);
 
 
 //! !Task - 3 => Class - Person : -
-class person {
+class Person {
     constructor(name, age, dob, gender, description) {
         this.name = name;
         this.age = age;
@@ -91,7 +91,7 @@ class person {
         this.description = description;
     }
 };
-const Ajith = new person("AJ", "25", "11-03-1999", "Male", "Full Stack Developer");
+const Ajith = new Person("AJ", "25", "11-03-1999", "Male", "Full Stack Developer");
 console.log(
     "Name :" + " " + Ajith.name + ",",
     "Age :" + " " + Ajith.age + ",",
@@ -105,21 +105,21 @@ console.log(
 
 
 //! Task - 4 => Class - Uber : -
-class uber {
+class Uber {
     constructor(price, km) {
         this.price = price;
         this.km = km;
     }
-    set cost(a){
+    set Cost(a){
         this.price = a;
-        //this.km = a;
+        // this.km = a;
     }
-    set kilometer(b){
-         this.km = b;
-     }
+    set Kilometer(b){
+        this.km = b;
+    }
     get cost(){
         return this.price*this.km;
     }
 };
-const ride = new uber(20,10);
-console.log(ride.cost);
+const ride = new Uber(20,10);
+console.log("Uber price :" + " " + ride.cost);
